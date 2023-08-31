@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/messages/unread", "destination": "/api/unread" }
+    { "source": "/messages/:path*", "destination": "/api/:path*" }
   ]
 }
