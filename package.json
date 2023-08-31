@@ -5,8 +5,8 @@
   "author": "Liaksej",
   "license": "MIT",
   "scripts": {
-    "serve": "node api/unread.ts 8000",
-    "build": "tsc"
+    "serve": "node api/unread.ts",
+    "build": "pnpm install & pnpm serve"
   },
   "devDependencies": {
     "@types/node": "^20.5.7",
