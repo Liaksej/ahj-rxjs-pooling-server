@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/messages/unread", "destination": "/api/unread" }
+  ]
+}
