@@ -16,7 +16,9 @@ function generateMessage() {
     from: faker.internet.email(),
     subject: `Hello from ${faker.person.firstName()} ${faker.person.lastName()}!`,
     body: `Long message body here`,
-    received: faker.date.past().getTime(),
+    received: faker.date
+      .between({ from: Date.now() - 5, to: Date.now() })
+      .getTime(),
   };
 }
 
