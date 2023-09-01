@@ -4,6 +4,9 @@ import { v4 as uuidv4 } from "uuid";
 import { faker } from "@faker-js/faker";
 
 export default function (request: VercelRequest, response: VercelResponse) {
+  response.setHeader("Access-Control-Allow-Origin", "*");
+  response.setHeader("Access-Control-Allow-Methods", "GET, POST");
+  response.setHeader("Access-Control-Allow-Headers", "Content-Type");
   response.status(200).json(generateData());
 }
 
